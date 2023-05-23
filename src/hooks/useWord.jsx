@@ -45,7 +45,7 @@ export default function WordProvider({ children }) {
         }
         else {
             setFalseAnswer(falseAnswer + 1);
-            if (falseAnswer + 1 >= 5) {
+            if (falseAnswer + 1 >= 6) {
                 setFalseAnswer(0);
                 toggleFalse();
             }

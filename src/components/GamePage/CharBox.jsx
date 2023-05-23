@@ -1,7 +1,7 @@
 function CharBox({ char }) {
     const style = {
-        backgroundColor: "lightgreen",
-        color: "black"
+        backgroundColor: "#4ade80",
+        color: "white"
     };
     return (
         <div className="char__box" style={char.state ? style : {}}>

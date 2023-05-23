@@ -1,8 +1,8 @@
-import FalseBox from "./GamePage/FalseBox";
 import getCharList from "../utils/getCharList";
 import CharBox from "./GamePage/CharBox";
 import CharBtn from "./GamePage/CharBtn";
 import {useWord} from "../hooks/useWord";
+import { HangmanDrawing } from "./HangmanDrawing";
 
 function CharList() {
     const {word} = useWord();
@@ -28,7 +28,7 @@ function BtnList() {
 function HangManGame() {
     return (
         <>
-            <FalseBox />
+            <HangmanDrawing/>
             <CharList />
             <BtnList />
         </>
