@@ -9,8 +9,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@rn-primitives/checkbox": "^1.0.3",
     "expo": "~51.0.28",
     "expo-status-bar": "~1.12.1",
+    "lucide-react-native": "^0.438.0",
     "react": "18.2.0",
     "react-native": "0.74.5",
     "twrnc": "^4.5.1"
