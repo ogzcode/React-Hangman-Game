@@ -17,8 +17,9 @@ export const Checkbox = ({ checked = false, onChange = () => { }, style = {}, di
 
     const checkboxStyle = useMemo(() => {
         return [
-            tw.style(`flex-row justify-center items-center w-6 h-6 rounded border disabled:opacity-50`,
-                checked ? `${severityStyle[severity]}` : `bg-white border-gray-400`
+            tw.style(`flex-row justify-center items-center w-6 h-6 rounded border`,
+                checked ? `${severityStyle[severity]}` : `bg-white border-gray-400`,
+                disabled && `bg-gray-300 border-gray-300`
             ),
             style,
         ];
