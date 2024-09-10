@@ -3,6 +3,7 @@ import { AccordionScreen } from '../screens/AccordionScreen';
 import { CheckboxScreen } from '../screens/CheckboxScreen';
 import { AlertDialogScreen } from '../screens/AlertDialog';
 import { InputScreen } from '../screens/InputScreen';
+import { TextareaScreen } from '../screens/TextareaScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -14,6 +15,7 @@ export function DrawerStack() {
       <Drawer.Screen name="AlertDialog" component={AlertDialogScreen} />
       <Drawer.Screen name="Checkbox" component={CheckboxScreen} />
       <Drawer.Screen name="Input" component={InputScreen} />
+      <Drawer.Screen name="Textarea" component={TextareaScreen} />
     </Drawer.Navigator>
   );
 }
