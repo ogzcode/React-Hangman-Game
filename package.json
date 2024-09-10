@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-navigation/drawer": "^6.7.2",
     "@react-navigation/native": "^6.1.18",
-    "@rn-primitives/alert-dialog": "^1.0.3",
+    "@rn-primitives/accordion": "^1.0.3",
     "@rn-primitives/checkbox": "^1.0.3",
     "@rn-primitives/portal": "^1.0.3",
     "expo": "~51.0.28",
