@@ -7,7 +7,7 @@ export const Tabs = ({ tabList = [], value = null, onChange = () => { }, childre
     const { tw } = useTailwind();
 
     const defaultStyle = "h-12 items-center justify-center flex-row p-1.5"
-    const bottomBorderStyle = bottomBorder ? "" : "bg-gray-200 rounded-md"
+    const bottomBorderStyle = bottomBorder ? "" : "border border-gray-300 rounded-md"
 
     return (
         <TabsPrimitive.Root value={value} onValueChange={value => onChange(value)}>
@@ -27,7 +27,7 @@ const TabTrigger = ({ tab, isBottomBorder }) => {
     const { tw } = useTailwind();
     const { value } = TabsPrimitive.useRootContext();
     const activeStyle = useMemo(() => {
-        return value === tab.value ? isBottomBorder ? tw`border-b-2 border-gray-500` : tw`bg-white rounded-sm` : tw`text-gray-500`
+        return value === tab.value ? isBottomBorder ? tw`border-b-2 border-gray-500` : tw`bg-gray-800 rounded-md` : tw`text-gray-500`
     }, [value, tab.value])
 
     return (
@@ -36,7 +36,9 @@ const TabTrigger = ({ tab, isBottomBorder }) => {
             activeStyle,
             ]}
         >
-            <Text style={tw`text-base text-gray-500`}>{tab.label}</Text>
+            <Text style={[tw`text-base`,
+                value === tab.value ? tw`text-white` : tw`text-gray-600`
+            ]}>{tab.label}</Text>
         </TabsPrimitive.Trigger>
     )
 }
