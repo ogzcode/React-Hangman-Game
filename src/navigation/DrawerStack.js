@@ -2,6 +2,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { AccordionScreen } from '../screens/AccordionScreen';
 import { AlertDialogScreen } from '../screens/AlertDialog';
 import { AvatarScreen } from '../screens/Avatar';
+import { BadgeScreen } from '../screens/BadgeScreen';
 import { CheckboxScreen } from '../screens/CheckboxScreen';
 import { InputScreen } from '../screens/InputScreen';
 import { TextareaScreen } from '../screens/TextareaScreen';
@@ -16,6 +17,7 @@ export function DrawerStack() {
       <Drawer.Screen name="Accordion" component={AccordionScreen} />
       <Drawer.Screen name="AlertDialog" component={AlertDialogScreen} />
       <Drawer.Screen name="Avatar" component={AvatarScreen} />
+      <Drawer.Screen name="Badge" component={BadgeScreen} />
       <Drawer.Screen name="Checkbox" component={CheckboxScreen} />
       <Drawer.Screen name="Input" component={InputScreen} />
       <Drawer.Screen name="Tabs" component={TabsScreen} />
