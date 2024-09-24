@@ -6,6 +6,7 @@ import { Navigation } from './src/navigation/Navigation';
 
 
 import { PortalHost } from '@rn-primitives/portal';
+import React from 'react';
 
 export default function App() {
 
