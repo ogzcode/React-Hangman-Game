@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "React-Hangman-Game",
-    "slug": "React-Hangman-Game",
+    "name": "react-native-components",
+    "slug": "react-native-components",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
